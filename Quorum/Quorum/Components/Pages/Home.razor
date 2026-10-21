@@ -1,0 +1,52 @@
+﻿@page "/"
+
+<PageTitle>quorum</PageTitle>
+
+<div class="text-center">
+    <div id="main">
+        <div id="p1">
+            <img src="http://github.com/i5cmd.png" class="img-fluid" draggable="false"/>
+            <h1>Quorum</h1>
+            <h5>i5cmd</h5>
+            <div id="links">
+                @foreach (var linkButton in linkButtons)
+                {
+                    <a class="linkButto" href="@linkButton.Link" draggable="false" target="_blank">
+                        @if (!string.IsNullOrWhiteSpace(linkButton.IconLink)) {
+                            <img src="@linkButton.IconLink" />
+                        }
+                        <span>@linkButton.Name</span>
+                    </a>
+                }
+            </div>
+        </div>
+        <div id="p2">
+            <h1>about me</h1>
+            <p>hey, i'm Quorum, i5cmd on programming sites. i'm from a small town in silesia (i wasn't born there, i ain't silesian). i'm a technical school student and i'm learning programming. i also treat coding as my hobby and, well, as you can see, i enjoy it pretty well. i try to make my code high quality. apart from programming i like reading mangas, usually good romcoms or simply comedies. i like hiking (when there's a mountain peak to get on, only). the highest peaks i've ever got were Sniezka and Snieznik.</p>
+        </div>
+    </div>
+    <div id="p3">
+        <div class="stripe">
+            @for (int i = 2025; i <= currentYear; i++)
+            {
+                <div>
+                    <div class="circle">
+                        <div>
+                            <p class="bolder">@i</p>
+                            @if (years.FirstOrDefault(val => val.Year == i) != null)
+                            {
+                                var year = years.FirstOrDefault(val => val.Year == i);
+                                foreach (var el in year.ProgrammingLangs)
+                                {
+                                    <p>@el</p>
+                                }
+                            }
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            }
+        </div>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+﻿@inherits LayoutComponentBase
+
+<div>
+    <header>
+            <nav class="navigation">
+                <div class="nav-container">
+                <a class="navbar-brand" href=""><img src="http://github.com/i5cmd.png" /></a>
+                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between links">
+                        <ul class="navbar-nav dflex flex-row gap">
+                            <li class="nav-item">
+                                <a class="nav-link" href="">about me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Projects">projects</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <main role="main" class="pb-3">
+                @Body
+            </main>
+        </div>
+    </div>
+

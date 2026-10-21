@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Quorum/Quorum.Client/Quorum.Client.csproj" />
+  <Project Path="Quorum/Quorum/Quorum.csproj" />
+</Solution>
