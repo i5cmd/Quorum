@@ -1,0 +1,33 @@
+﻿@page "/Projects"
+
+<div>
+    <h1>projects</h1>
+    @if (projects is null)
+    {
+        <div id="loading">
+            <img src="/assets/yuzuha.gif" class="small" />
+            <h2>Searching for featured projects...</h2>
+        </div>
+    }
+    else
+    {
+        <div id="container">
+            @foreach (var el in projects)
+            {
+                <a class="proj" href=@el.Link>
+                    @if (el.ImgLink == "")
+                    {
+                        <img src="/assets/yuzuha.gif" draggable="false" class="small" />
+                    }
+                    else
+                    {
+                        <img src=@el.ImgLink draggable="false" class="small" />
+                    }
+                    <span class="bigger-text">@el.Name</span>
+                    <span class="desc">@el.Description</span>
+                </a>
+            }
+        </div>
+    }
+</div>
+

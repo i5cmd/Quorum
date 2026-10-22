@@ -13,7 +13,7 @@
                 {
                     <a class="linkButto" href="@linkButton.Link" draggable="false" target="_blank">
                         @if (!string.IsNullOrWhiteSpace(linkButton.IconLink)) {
-                            <img src="@linkButton.IconLink" />
+                            <img src="@linkButton.IconLink" draggable="false"/>
                         }
                         <span>@linkButton.Name</span>
                     </a>

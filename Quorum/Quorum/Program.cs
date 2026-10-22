@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using Quorum;
+
 using Quorum.Components;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,6 +9,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents()
     .AddInteractiveWebAssemblyComponents();
+
+builder.Services.AddDbContextFactory<AppDbContext>(options => options.UseSqlite("Data Source = quorum.db"));
 
 var app = builder.Build();
 
