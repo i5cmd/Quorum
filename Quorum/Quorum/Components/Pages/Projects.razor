@@ -14,14 +14,14 @@
         <div id="container">
             @foreach (var el in projects)
             {
-                <a class="proj" href=@el.Link>
+                <a class="proj" href=@el.Link target="_blank">
                     @if (el.ImgLink == "")
                     {
-                        <img src="/assets/yuzuha.gif" draggable="false" class="small" />
+                        <img src="/assets/yuzuha.gif" draggable="false" class="thumbnail" />
                     }
                     else
                     {
-                        <img src=@el.ImgLink draggable="false" class="small" />
+                        <img src=@el.ImgLink draggable="false" class="thumbnail" />
                     }
                     <span class="bigger-text">@el.Name</span>
                     <span class="desc">@el.Description</span>

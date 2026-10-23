@@ -21,8 +21,8 @@
     font-weight: bold;
     font-size: 18px;
     background-color: #cfcfcf1a;
-    padding: 5px 20px;
-    border-radius: 14px;
+    padding: 5px 5px;
+    border-radius: 16px;
     text-spacing: 10px;
     text-decoration: none !important;
     border: 1px solid #ffffff14;
@@ -51,12 +51,26 @@
 
 .bigger-text {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 6px;
+    text-align: center;
 }
 
 .desc {
     font-family: "PT Serif";
+    font-weight: normal;
     font-size: 12px;
+    text-wrap: pretty;
+    width: 250px;
+    text-align: center;
+}
+
+.thumbnail {
+    aspect-ratio: 16 / 9;
+    width: 300px;
+    border-radius: 14px;
+    object-fit: cover;
 }
 
 #container {
@@ -67,4 +81,8 @@
     justify-content: space-between;
     gap: 10px;
     flex-wrap: wrap;
+}
+
+h1 {
+    text-align: center;
 }
