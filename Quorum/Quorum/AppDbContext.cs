@@ -8,5 +8,6 @@ namespace Quorum
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
         public DbSet<Projekt> projekty { get; set; }
+        public DbSet<Tools> toolsy { get; set; }
     }
 }

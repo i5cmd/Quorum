@@ -1,0 +1,89 @@
+/* CSS for Tools component */
+@media only screen and (max-width: 850px) {
+    #tools > div, #frameworks > div {
+        display: flex;
+        flex-direction: column !important;
+    }
+}
+
+.smaller {
+    aspect-ratio: 1 / 1;
+    width: 80px;
+    padding: 5px;
+}
+
+.proj, #tools > div, #frameworks > div {
+    display: flex;
+    flex-direction: row;
+}
+
+#tools > div, #frameworks > div {
+    gap: 10px;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+}
+
+.proj {
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    color: white !important;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #cfcfcf1a;
+    padding: 5px 5px;
+    border-radius: 16px;
+    text-spacing: 10px;
+    text-decoration: none !important;
+    border: 1px solid #ffffff14;
+    justify-content: center;
+    align-items: center;
+    outline: solid 0 #ffffff52;
+    outline-offset: 2px;
+    transition: all 0.2s;
+    width: 250px;
+}
+
+.proj:hover {
+    background-color: #ffffff1a;
+    border: 1px solid #ffffff14;
+    text-shadow: rgba(255,255,255,0.57) 0px 0px 8px;
+    transition: all 0.2s;
+    transform: translateY(-2px) scale(1.02);
+    outline: solid 2px #ffffff52;
+    outline-offset: 2px;
+}
+
+.proj:active {
+    transition: all 0.2s;
+    transform: translateY(-2px) scale(0.8);
+}
+
+.bigger-text {
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.desc {
+    font-family: "PT Serif";
+    font-weight: normal;
+    font-size: 12px;
+    text-wrap: pretty;
+    width: 250px;
+    text-align: center;
+}
+
+h3 {
+    margin: 15px 0 2px 0;
+}
+
+h1 {
+    text-align: center;
+}
+

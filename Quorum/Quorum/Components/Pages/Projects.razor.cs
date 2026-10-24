@@ -7,7 +7,7 @@ namespace Quorum.Components.Pages
     {
         [Inject]
         IDbContextFactory<AppDbContext> DbFactory { get; set;  } = default!;
-        private List<Projekt> projects;
+        private List<Quorum.Projekt> projects;
         protected override async Task OnInitializedAsync()
         {
             await using var db = await DbFactory.CreateDbContextAsync();

@@ -1,0 +1,48 @@
+﻿@page "/Tools"
+
+<PageTitle>tools</PageTitle>
+
+<div>
+    <h1>tools</h1>
+    @if (toolz != null)
+    {
+        <div id="tools">
+            <h3>ides</h3>
+            <div>
+                @foreach (var el in toolz)
+                {
+                    if (el.Category == "IDE")
+                    {
+                        <a class="proj" href=@el.Link target="_blank">
+                            <img class="smaller" src=@el.Img />
+                            <div class="texts">
+                                <span class="bigger-text">@el.Name</span>
+                                <span class="desc">@el.Desc</span>
+                            </div>
+                        </a>
+                    }
+                }
+            </div>
+            
+        </div>
+        <div id="frameworks">
+            <h3>frameworks</h3>
+            <div>
+                @foreach (var el in toolz)
+                {
+                    if (el.Category == "Frameworks")
+                    {
+                        <a class="proj" href=@el.Link target="_blank">
+                            <img class="smaller" src=@el.Img />
+                            <div class="texts">
+                                <span class="bigger-text">@el.Name</span>
+                                <span class="desc">@el.Desc</span>
+                            </div>
+                        </a>
+                    }
+                }
+            </div>
+        </div>
+    } 
+    
+</div>
