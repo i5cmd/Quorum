@@ -19,7 +19,9 @@ namespace Quorum.Components.Pages
         public int currentYear = DateTime.Now.Year;
         public List<LinkButton> linkButtons { get; set; } = new()
         {
-            new() {Name="GitHub", Link="https://github.com/i5cmd", IconLink="/assets/github-white-icon.webp"}
+            new() {Name="GitHub", Link="https://github.com/i5cmd", IconLink="/assets/github-8-xxl.png"},
+            new() {Name="Twitter", Link="https://x.com/bolimnienerka", IconLink="/assets/twitter-3-xxl.png"},
+            new() {Name="Steam", Link="https://steamcommunity.com/id/refreshingthelife/", IconLink="/assets/steam-xxl.png"},
         };
         public List<Years> years { get; set; } = new List<Years>()
         {

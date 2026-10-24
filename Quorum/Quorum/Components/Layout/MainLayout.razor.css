@@ -30,6 +30,10 @@
         transform: scale(1.1) rotate(5deg);
     }
 
+    .navbar-brand > img:active {
+        transform: scale(0.5) rotate(15deg);
+    }
+
 .layonnow {
     display: flex !important;
     flex-direction: row !important;
@@ -60,12 +64,24 @@
     transition: all 0.2s;
     color: white;
     text-decoration: none;
+    outline: solid 0 #ffffff52;
+    padding: 2px 5px;
+    border-radius: 8px;
+    outline-offset: 2px;
 }
 
-.nav-link:hover {
-    transition: all 0.2s;
-    transform: translateY(-2px) scale(1.02);
-}
+    .nav-link:hover {
+        transition: all 0.2s;
+        transform: translateY(-2px) scale(1.04);
+        outline: solid 2px #ffffff52;
+        outline-offset: 2px;
+    }
+
+    .nav-link:active {
+        transition: all 0.2s;
+        transform: translateY(-2px) scale(0.8);
+    }
+
 .navbar-nav {
     display: flex;
     justify-content: center;

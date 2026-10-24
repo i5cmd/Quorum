@@ -35,7 +35,8 @@
 
 #links {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 7px;
     justify-content: center;
 }
 
@@ -47,12 +48,12 @@
     font-weight: bold;
     font-size: 18px;
     background-color: #cfcfcf1a;
-    padding: 5px 20px;
+    padding: 5px 10px;
     border-radius: 14px;
     text-spacing: 10px;
     text-decoration: none !important;
     border: 1px solid #ffffff14;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -63,10 +64,10 @@
 }
 
 .linkButto > img {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     aspect-ratio: 1 / 1;
-    padding: 2px;
+    padding: 5px;
 }
 
 .linkButto > span {
@@ -92,17 +93,27 @@
     text-decoration: none;
     display: flex;
     justify-content: center;
+    outline: solid 0 #ffffff52;
+    outline-offset: 2px;
 }
 
 .linkButto:hover {
     transition: all 0.2s;
-    transform: translateY(-2px) scale(1.02);
+    transform: translateX(5px) scale(1.02);
+    outline: solid 2px #ffffff52;
+    outline-offset: 2px;
+}
+
+.linkButto:active {
+    transition: all 0.2s;
+    transform: translateX(5px) scale(0.8);
 }
 
 .linkButto > span {
     color: white !important;
     text-decoration: none !important;
     margin: 0 0 0 10px;
+    width: 75px;
 }
 
 #p1 {
